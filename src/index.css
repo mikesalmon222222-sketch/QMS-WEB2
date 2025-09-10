@@ -8,6 +8,7 @@
 /* Import Page Styles */
 @import './styles/pages/home.css';
 @import './styles/pages/services.css';
+@import './styles/pages/contact.css';
 
 /* Skip link for accessibility */
 .skip-link {
