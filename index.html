@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    
+    <!-- Favicon Implementation -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#8B5CF6" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Quantum Concierge Services - Your trusted partner in procurement & technology solutions. Serving government agencies and corporations nationwide with office supplies, furniture, cleaning products, and custom software development." />
     <meta name="keywords" content="procurement, government contracts, office supplies, furniture, cleaning products, technology solutions, software development, mobile apps, website development" />
@@ -12,14 +21,42 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Quantum Concierge Services - Procurement & Technology Solutions" />
     <meta property="og:description" content="Your trusted partner in procurement & technology solutions. Serving government agencies and corporations nationwide." />
+    <meta property="og:image" content="/logo.svg" />
+    <meta property="og:url" content="https://quantumsrv.com" />
     <meta property="og:site_name" content="Quantum Concierge Services" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Quantum Concierge Services - Procurement & Technology Solutions" />
     <meta property="twitter:description" content="Your trusted partner in procurement & technology solutions. Serving government agencies and corporations nationwide." />
+    <meta property="twitter:image" content="/logo.svg" />
     
     <title>Quantum Concierge Services - Procurement & Technology Solutions</title>
+    
+    <!-- Structured Data Markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Quantum Concierge Services",
+      "url": "https://quantumsrv.com",
+      "logo": "https://quantumsrv.com/logo.svg",
+      "description": "Your Trusted Partner in Procurement & Technology Solutions",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-859-287-2983",
+        "contactType": "customer service",
+        "email": "Joe.root@quantumsrv.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/quantum-concierge-services"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

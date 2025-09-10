@@ -70,6 +70,20 @@
   text-decoration: none;
 }
 
+.footer__logo-image {
+  height: auto;
+  max-height: 50px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: all var(--transition-fast);
+}
+
+.footer__logo:hover .footer__logo-image {
+  filter: brightness(1);
+}
+
 .footer__logo-text {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);

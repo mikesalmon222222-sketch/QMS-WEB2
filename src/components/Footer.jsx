@@ -15,12 +15,16 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__content">
-          {/* Company Info */}
+          {/* Company Info with Logo */}
           <div className="footer__company">
             <Link to="/" className="footer__logo">
-              <div className="footer__logo-text">
-                Quantum Concierge Services
-              </div>
+              <img 
+                src="/logo.svg" 
+                alt="Quantum Concierge Services" 
+                className="footer__logo-image"
+                width="200"
+                height="60"
+              />
             </Link>
             <p className="footer__description">
               Your trusted partner in procurement and technology solutions, delivering excellence across the United States for government agencies and corporate clients.
@@ -45,9 +49,8 @@ const Footer = () => {
           </nav>
         </div>
 
-        {/* Partner Logos */}
+        {/* Partner Logos - No Headers */}
         <div className="footer__partners">
-          <h4 className="footer__partners-title">Trusted Partners & Certifications</h4>
           <div className="footer__partners-grid">
             {/* BBB Logo */}
             <a

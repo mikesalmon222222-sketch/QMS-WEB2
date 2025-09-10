@@ -22,9 +22,13 @@ const Header = () => {
           {/* Logo */}
           <div className="header__logo-wrapper">
             <Link to="/" className="header__logo">
-              <div className="header__logo-text">
-                Quantum Concierge Services
-              </div>
+              <img 
+                src="/logo.svg" 
+                alt="Quantum Concierge Services - Your trusted partner in procurement & technology solutions" 
+                className="header__logo-image"
+                width="250"
+                height="75"
+              />
             </Link>
           </div>
 
