@@ -29,7 +29,7 @@ A professional, modern website for Quantum Concierge Services built with React.j
 ## Development Setup
 
 ### Prerequisites
-- Node.js (v18 or higher)
+- Node.js (v20.19.0 or higher) - Use .nvmrc for recommended version
 - npm or yarn
 
 ### Installation
