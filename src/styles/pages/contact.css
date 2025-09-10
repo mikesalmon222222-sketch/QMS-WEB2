@@ -1,15 +1,83 @@
 /* Contact Page - Enhanced Professional Design */
 
 .contact {
-  padding: var(--spacing-8xl) 0;
   background: linear-gradient(135deg, var(--color-secondary-50) 0%, white 50%, var(--color-primary-50) 100%);
   position: relative;
+}
+
+/* Hero Section with Office Background */
+.contact__hero {
+  position: relative;
+  padding: var(--spacing-8xl) 0 var(--spacing-6xl);
+  background: url('/images/contact/professional-office.svg') center/cover no-repeat;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.contact__hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(248, 250, 252, 0.9) 0%, 
+    rgba(139, 92, 246, 0.1) 30%,
+    rgba(30, 64, 175, 0.15) 70%,
+    rgba(248, 250, 252, 0.9) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .contact__hero-container {
+    padding: 0 var(--spacing-2xl);
+  }
+}
+
+.contact__hero-title {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-2xl);
+  background: linear-gradient(135deg, var(--color-secondary-900) 0%, var(--color-primary-700) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@media (min-width: 768px) {
+  .contact__hero-title {
+    font-size: var(--font-size-6xl);
+  }
+}
+
+.contact__hero-description {
+  font-size: var(--font-size-xl);
+  color: var(--color-secondary-600);
+  line-height: var(--line-height-relaxed);
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
 }
 
 .contact::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 400px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -22,7 +90,7 @@
   z-index: 2;
   max-width: var(--container-lg);
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: var(--spacing-6xl) var(--spacing-lg);
 }
 
 @media (min-width: 1024px) {

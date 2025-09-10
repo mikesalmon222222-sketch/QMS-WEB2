@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A202C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2D3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A5568;stop-opacity:1" />
+    </linearGradient>
+    <filter id="screenGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#techGradient)"/>
+  
+  <!-- Server Racks -->
+  <rect x="50" y="100" width="120" height="400" fill="#2D3748" stroke="#4A5568" stroke-width="2" rx="5"/>
+  <rect x="190" y="100" width="120" height="400" fill="#2D3748" stroke="#4A5568" stroke-width="2" rx="5"/>
+  
+  <!-- Server Units -->
+  <rect x="60" y="120" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="60" y="155" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="60" y="190" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="60" y="225" width="100" height="25" fill="#1A202C" rx="3"/>
+  
+  <rect x="200" y="120" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="200" y="155" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="200" y="190" width="100" height="25" fill="#1A202C" rx="3"/>
+  <rect x="200" y="225" width="100" height="25" fill="#1A202C" rx="3"/>
+  
+  <!-- Status LEDs -->
+  <circle cx="75" cy="132" r="2" fill="#38A169"/>
+  <circle cx="85" cy="132" r="2" fill="#3182CE"/>
+  <circle cx="95" cy="132" r="2" fill="#E53E3E"/>
+  
+  <circle cx="215" cy="132" r="2" fill="#38A169"/>
+  <circle cx="225" cy="132" r="2" fill="#38A169"/>
+  <circle cx="235" cy="132" r="2" fill="#3182CE"/>
+  
+  <!-- Network Equipment -->
+  <rect x="350" y="350" width="200" height="60" fill="#2D3748" stroke="#4A5568" stroke-width="2" rx="5"/>
+  <rect x="360" y="365" width="180" height="8" fill="#1A202C" rx="2"/>
+  <rect x="360" y="380" width="180" height="8" fill="#1A202C" rx="2"/>
+  <rect x="360" y="395" width="180" height="8" fill="#1A202C" rx="2"/>
+  
+  <!-- Network Ports -->
+  <rect x="365" y="367" width="8" height="4" fill="#3182CE"/>
+  <rect x="378" y="367" width="8" height="4" fill="#38A169"/>
+  <rect x="391" y="367" width="8" height="4" fill="#3182CE"/>
+  <rect x="404" y="367" width="8" height="4" fill="#38A169"/>
+  
+  <!-- Workstation Setup -->
+  <!-- Monitor -->
+  <rect x="400" y="150" width="300" height="180" fill="#1A202C" stroke="#4A5568" stroke-width="3" rx="5"/>
+  <rect x="410" y="160" width="280" height="160" fill="#000000" rx="3"/>
+  
+  <!-- Screen Content -->
+  <rect x="420" y="170" width="260" height="140" fill="#0F4C75" filter="url(#screenGlow)"/>
+  <rect x="430" y="180" width="240" height="15" fill="rgba(100,200,255,0.8)"/>
+  <rect x="430" y="200" width="180" height="8" fill="rgba(100,255,150,0.6)"/>
+  <rect x="430" y="215" width="220" height="8" fill="rgba(255,200,100,0.6)"/>
+  <rect x="430" y="230" width="160" height="8" fill="rgba(100,200,255,0.6)"/>
+  
+  <!-- Code Lines -->
+  <rect x="440" y="250" width="100" height="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="440" y="260" width="80" height="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="450" y="270" width="120" height="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="440" y="280" width="90" height="3" fill="rgba(255,255,255,0.7)"/>
+  
+  <!-- Monitor Stand -->
+  <rect x="530" y="330" width="40" height="30" fill="#4A5568"/>
+  <rect x="500" y="360" width="100" height="15" fill="#2D3748" rx="7"/>
+  
+  <!-- Keyboard -->
+  <rect x="450" y="420" width="200" height="60" fill="#2D3748" stroke="#4A5568" stroke-width="1" rx="5"/>
+  <rect x="460" y="430" width="180" height="40" fill="#1A202C" rx="3"/>
+  
+  <!-- Keys -->
+  <rect x="470" y="440" width="12" height="8" fill="#4A5568" rx="1"/>
+  <rect x="485" y="440" width="12" height="8" fill="#4A5568" rx="1"/>
+  <rect x="500" y="440" width="12" height="8" fill="#4A5568" rx="1"/>
+  <rect x="515" y="440" width="12" height="8" fill="#4A5568" rx="1"/>
+  
+  <!-- Mouse -->
+  <ellipse cx="680" cy="450" rx="15" ry="20" fill="#2D3748"/>
+  <rect x="675" y="445" width="10" height="2" fill="#4A5568"/>
+  
+  <!-- Cables -->
+  <path d="M550,350 Q570,370 590,350 Q610,330 630,350" fill="none" stroke="#718096" stroke-width="3"/>
+  <path d="M310,400 Q340,420 370,400" fill="none" stroke="#718096" stroke-width="2"/>
+  
+  <!-- Data Flow Visualization -->
+  <g opacity="0.6">
+    <circle cx="150" cy="80" r="4" fill="#3182CE">
+      <animate attributeName="cy" values="80;520;80" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="80" r="3" fill="#38A169">
+      <animate attributeName="cy" values="80;520;80" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="80" r="5" fill="#E53E3E">
+      <animate attributeName="cy" values="80;520;80" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Ambient Lighting -->
+  <ellipse cx="400" cy="50" rx="200" ry="30" fill="rgba(59,130,246,0.3)" opacity="0.8"/>
+</svg>

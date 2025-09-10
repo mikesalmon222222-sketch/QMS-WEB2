@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="devGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    <filter id="codeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#devGradient)"/>
+  
+  <!-- Multiple Monitors Setup -->
+  <!-- Main Monitor -->
+  <rect x="200" y="100" width="400" height="250" fill="#1E293B" stroke="#475569" stroke-width="3" rx="8"/>
+  <rect x="210" y="110" width="380" height="230" fill="#000000" rx="5"/>
+  
+  <!-- Code Editor Interface -->
+  <rect x="220" y="120" width="360" height="25" fill="#1F2937"/>
+  <circle cx="235" cy="132" r="4" fill="#EF4444"/>
+  <circle cx="250" cy="132" r="4" fill="#F59E0B"/>
+  <circle cx="265" cy="132" r="4" fill="#10B981"/>
+  
+  <!-- Code Content -->
+  <rect x="220" y="150" width="360" height="180" fill="#111827"/>
+  
+  <!-- Code Lines -->
+  <g filter="url(#codeGlow)">
+    <rect x="230" y="160" width="80" height="3" fill="#8B5CF6"/>
+    <rect x="320" y="160" width="60" height="3" fill="#F59E0B"/>
+    <rect x="390" y="160" width="40" height="3" fill="#10B981"/>
+    
+    <rect x="240" y="175" width="100" height="3" fill="#06B6D4"/>
+    <rect x="350" y="175" width="80" height="3" fill="#F97316"/>
+    
+    <rect x="230" y="190" width="120" height="3" fill="#8B5CF6"/>
+    <rect x="360" y="190" width="90" height="3" fill="#EF4444"/>
+    
+    <rect x="250" y="205" width="70" height="3" fill="#10B981"/>
+    <rect x="330" y="205" width="110" height="3" fill="#06B6D4"/>
+    
+    <rect x="240" y="220" width="95" height="3" fill="#F59E0B"/>
+    <rect x="345" y="220" width="75" height="3" fill="#8B5CF6"/>
+    
+    <rect x="230" y="235" width="85" height="3" fill="#EF4444"/>
+    <rect x="325" y="235" width="100" height="3" fill="#10B981"/>
+    
+    <rect x="260" y="250" width="60" height="3" fill="#06B6D4"/>
+    <rect x="330" y="250" width="80" height="3" fill="#F97316"/>
+    
+    <rect x="230" y="265" width="110" height="3" fill="#8B5CF6"/>
+    <rect x="350" y="265" width="70" height="3" fill="#F59E0B"/>
+    
+    <rect x="240" y="280" width="90" height="3" fill="#10B981"/>
+    <rect x="340" y="280" width="85" height="3" fill="#EF4444"/>
+    
+    <rect x="230" y="295" width="75" height="3" fill="#06B6D4"/>
+    <rect x="315" y="295" width="95" height="3" fill="#F97316"/>
+  </g>
+  
+  <!-- Monitor Stand -->
+  <rect x="350" y="350" width="100" height="20" fill="#475569"/>
+  <rect x="300" y="370" width="200" height="15" fill="#334155" rx="7"/>
+  
+  <!-- Secondary Monitor -->
+  <rect x="50" y="150" width="140" height="100" fill="#1E293B" stroke="#475569" stroke-width="2" rx="5"/>
+  <rect x="57" y="157" width="126" height="86" fill="#000000" rx="3"/>
+  
+  <!-- Secondary Monitor Content - Terminal -->
+  <rect x="60" y="160" width="120" height="80" fill="#0F172A"/>
+  <rect x="65" y="165" width="80" height="2" fill="#10B981"/>
+  <rect x="65" y="175" width="60" height="2" fill="#F59E0B"/>
+  <rect x="65" y="185" width="90" height="2" fill="#06B6D4"/>
+  <rect x="65" y="195" width="70" height="2" fill="#EF4444"/>
+  
+  <!-- Keyboard -->
+  <rect x="150" y="420" width="300" height="80" fill="#374151" stroke="#4B5563" stroke-width="2" rx="8"/>
+  <rect x="160" y="430" width="280" height="60" fill="#1F2937" rx="5"/>
+  
+  <!-- Keys -->
+  <rect x="170" y="440" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="190" y="440" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="210" y="440" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="230" y="440" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="250" y="440" width="15" height="12" fill="#374151" rx="2"/>
+  
+  <rect x="170" y="460" width="20" height="12" fill="#374151" rx="2"/>
+  <rect x="195" y="460" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="215" y="460" width="15" height="12" fill="#374151" rx="2"/>
+  <rect x="235" y="460" width="15" height="12" fill="#374151" rx="2"/>
+  
+  <!-- Space bar -->
+  <rect x="190" y="480" width="120" height="12" fill="#374151" rx="6"/>
+  
+  <!-- Mouse -->
+  <ellipse cx="500" cy="460" rx="20" ry="25" fill="#374151"/>
+  <rect x="495" y="450" width="10" height="3" fill="#4B5563"/>
+  
+  <!-- Coffee Cup -->
+  <ellipse cx="650" cy="420" rx="25" ry="20" fill="#FFFFFF"/>
+  <ellipse cx="650" cy="415" rx="22" ry="17" fill="#8B4513"/>
+  <rect x="675" y="410" width="20" height="10" fill="none" stroke="#E5E7EB" stroke-width="2" rx="5"/>
+  
+  <!-- Notebook -->
+  <rect x="550" y="380" width="80" height="100" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2" rx="3"/>
+  <rect x="560" y="390" width="60" height="2" fill="#9CA3AF"/>
+  <rect x="560" y="400" width="50" height="2" fill="#9CA3AF"/>
+  <rect x="560" y="410" width="65" height="2" fill="#9CA3AF"/>
+  <rect x="560" y="420" width="40" height="2" fill="#9CA3AF"/>
+  
+  <!-- Pen -->
+  <rect x="620" y="400" width="4" height="40" fill="#3B82F6" rx="2"/>
+  <rect x="618" y="395" width="8" height="8" fill="#1D4ED8" rx="4"/>
+  
+  <!-- Smartphone -->
+  <rect x="70" y="380" width="60" height="100" fill="#1F2937" stroke="#374151" stroke-width="2" rx="15"/>
+  <rect x="80" y="395" width="40" height="65" fill="#000000" rx="8"/>
+  <circle cx="100" cy="470" r="5" fill="#374151"/>
+  
+  <!-- Headphones -->
+  <g transform="translate(600,200)">
+    <path d="M20,0 Q40,-10 60,0" fill="none" stroke="#374151" stroke-width="6"/>
+    <ellipse cx="10" cy="15" rx="12" ry="20" fill="#1F2937"/>
+    <ellipse cx="70" cy="15" rx="12" ry="20" fill="#1F2937"/>
+  </g>
+  
+  <!-- Code Particles/Data Flow -->
+  <g opacity="0.4">
+    <circle cx="100" cy="50" r="2" fill="#8B5CF6">
+      <animate attributeName="cy" values="50;550;50" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="80" r="3" fill="#10B981">
+      <animate attributeName="cy" values="80;550;80" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="30" r="1.5" fill="#F59E0B">
+      <animate attributeName="cy" values="30;570;30" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Ambient Lighting */
+  <ellipse cx="400" cy="20" rx="200" ry="20" fill="rgba(139,92,246,0.3)" opacity="0.8"/>
+  <ellipse cx="120" cy="280" rx="50" ry="10" fill="rgba(16,185,129,0.4)" opacity="0.6"/>
+</svg>

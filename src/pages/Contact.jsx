@@ -18,16 +18,21 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <div className="contact__container">
-        <div className="contact__header">
-          <h1 className="contact__title">
-            Contact Us
-          </h1>
-          <p className="contact__description">
-            Get in touch with our leadership team for procurement solutions, technology development, or partnership opportunities.
-          </p>
+      {/* Hero Section with Office Background */}
+      <section className="contact__hero">
+        <div className="contact__hero-overlay">
+          <div className="contact__hero-container">
+            <h1 className="contact__hero-title">
+              Contact Us
+            </h1>
+            <p className="contact__hero-description">
+              Get in touch with our leadership team for procurement solutions, technology development, or partnership opportunities.
+            </p>
+          </div>
         </div>
+      </section>
 
+      <div className="contact__container">
         {/* Leadership Team */}
         <div className="contact__leadership">
           <h2 className="contact__leadership-title">
