@@ -1,37 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Quantum Concierge Services - Enhanced Custom Styles */
+@import './styles/main.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import Component Styles */
+@import './styles/components/header.css';
+@import './styles/components/footer.css';
 
-/* Custom base styles */
-@layer base {
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-    background-color: #ffffff;
-    color: #1e293b;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-  }
+/* Import Page Styles */
+@import './styles/pages/home.css';
+@import './styles/pages/services.css';
+@import './styles/pages/contact.css';
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary-600);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--border-radius-md);
+  z-index: 1000;
+  transition: top var(--transition-fast);
 }
 
-/* Custom components */
-@layer components {
-  .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
-  }
-  
-  .btn-secondary {
-    @apply bg-white text-primary-600 border border-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-primary-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
-  }
-  
-  .nav-link {
-    @apply text-secondary-700 hover:text-primary-600 font-medium transition-colors duration-200;
-  }
-  
-  .card {
-    @apply bg-white rounded-xl shadow-sm border border-secondary-200 p-6 hover:shadow-md transition-shadow duration-200;
-  }
+.skip-link:focus {
+  top: 6px;
 }
